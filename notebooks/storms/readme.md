@@ -1,1 +1,1 @@
-![alt text](img/AMS.png/?raw=true "Title")
+![alt text](img/AMS.png)
