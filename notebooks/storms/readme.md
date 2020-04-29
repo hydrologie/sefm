@@ -1,1 +1,1 @@
-![alt text](master/img/AMS.png)
+![alt text](https://github.com/hydrologie/sefm/blob/master/img/AMS.png?raw=true)
