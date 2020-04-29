@@ -1,1 +1,1 @@
-![alt text](img/AMS.png)
+![alt text](sefm/img/AMS.png)
