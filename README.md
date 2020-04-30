@@ -4,17 +4,17 @@ sefm est une approche stochastique de génération des apports et du laminage ba
 sur la prise en compte des corrélations spatiotemporelles des conditions météo (pluie, neige au sol) et des conditions en réservoirs
 
 ## Gestion de projet
-- [X] Collecte des données météo
-- [ ] Classification des tempêtes (en cours)
-- [ ] Saisonnalité des tempêtes (en cours)
-- [ ] Distribution régionale de la magnitude de la précipitation pour chaque type de tempête/durée (en cours)
+- [X] [Collecte des données météo](notebooks/data-acquisition-and-cleaning)
+- [ ] Classification des tempêtes (**en cours**)
+- [ ] Saisonnalité des tempêtes (**en cours**)
+- [ ] Distribution régionale de la magnitude de la précipitation pour chaque type de tempête/durée (**en cours**)
 - [ ] Distribution spatiale et temporelle des tempêtes 
 - [ ] Patron temporelle de la température de l'air et du niveau de gel
 - [ ] Simulation de la température de l'air à 1000 mb
 - [ ] Taux de décroissance de la température de l'air
 - [ ] Niveau de gel
 - [ ] Échantillonage des états antécédants du modèle hydrologique HSAMI
-- [ ] Mise en oeuvre du moteur SEFM (en cours)
+- [ ] Mise en oeuvre du moteur SEFM (**en cours**)
 - [ ] Génération stochastique des apports
 
 
