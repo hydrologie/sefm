@@ -1,7 +1,7 @@
 # Analyse des précipitations et des tempêtes
 La réalisation de l'analyse des tempêtes se décline sous plusieurs récits :
 - Classification des types de tempêtes (DDST : database des type de tempêtes)
-  - [DDST](https://github.com/hydrologie/sefm/blob/master/notebooks/storms/DDST.ipynb)
+  - [DDST](DDST.ipynb) (en cours)
 - Analyse de la saisonnalité des tempêtes
 - Analyse de la magnitude et fréquence des précipitations régionales (L-moments)
 - Analyse des patrons spatiotemporels des tempêtes
@@ -22,4 +22,4 @@ Le storm typing est une approche de classification supervisée basé sur des var
   - Financière Agricole
   - National Weather Service
 
-![alt text](https://github.com/hydrologie/sefm/blob/master/img/AMS.png?raw=true)
+![alt text](.../img/AMS.png?raw=true)
