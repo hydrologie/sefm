@@ -5,7 +5,7 @@ sur la prise en compte des corrélations spatiotemporelles des conditions mété
 
 ## Gestion de projet
 - [X] [Collecte des données météo](notebooks/data-acquisition-and-cleaning)
-- [ ] Classification des tempêtes (**en cours**)
+- [ ] [Classification des tempêtes]((notebooks/storms) (**en cours**)
 - [ ] Saisonnalité des tempêtes (**en cours**)
 - [ ] Distribution régionale de la magnitude de la précipitation pour chaque type de tempête/durée (**en cours**)
 - [ ] Distribution spatiale et temporelle des tempêtes 
