@@ -13,7 +13,7 @@ sur la prise en compte des corrélations spatiotemporelles des conditions mété
 - [ ] Patron temporelle de la température de l'air et du niveau de gel
 - [ ] Simulation de la température de l'air à 1000 mb
 - [ ] Taux de décroissance de la température de l'air
-- [ ] Niveau de gel
+- [ ] Niveau de gel
 - [ ] Échantillonage des états antécédants du modèle hydrologique HSAMI
 - [ ] Mise en oeuvre du moteur SEFM (**en cours**)
 - [ ] Génération stochastique des apports
