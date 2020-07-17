@@ -8,6 +8,8 @@ dependencies:
  - dask-ml
  - datashader
  - descartes
+ - docker
+ - docker-compose
  - flask
  - flask-sqlalchemy
  - fsspec
@@ -19,16 +21,15 @@ dependencies:
  - holoviews
  - hvplot
  - intake
- - intake-esm
  - intake-geopandas
- - intake-stac
  - intake-xarray
  - ipywidgets
  - ipyleaflet
  - jupyter-panel-proxy
+ - jupyter_contrib_nbextensions
+ - jupyter_nbextensions_configurator
  - lz4
  - matplotlib-base
- - metpy
  - nomkl
  - numpy
  - numcodecs
@@ -36,6 +37,7 @@ dependencies:
  - panel
  - plotly
  - prefect
+ - pyarrow
  - pydap
  - python-blosc
  - python-dotenv
@@ -43,16 +45,10 @@ dependencies:
  - rio-cogeo
  - retrying
  - s3fs
- - sat-search
- - sat-stac
- - satpy
  - scikit-image
  - scikit-learn
  - scipy
  - seaborn
- - sparse
- - tiledb-py
+ - rpy2
  - xarray
- - xesmf
- - xpublish
  - zarr
