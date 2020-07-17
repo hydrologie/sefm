@@ -1,7 +1,7 @@
 # Analyse des précipitations et des tempêtes
 La réalisation de l'analyse des tempêtes se décline sous plusieurs récits :
 - Classification des types de tempêtes (DDST : database des type de tempêtes)
-  - [ ] [DDST](task-1.1 Storm Typing.ipynb)
+  - [ ] [DDST](task-1.1_storm-typing.ipynb)
 - Analyse de la saisonnalité des tempêtes
 - Analyse de la magnitude et fréquence des précipitations régionales (L-moments)
 - Analyse des patrons spatiotemporels des tempêtes
