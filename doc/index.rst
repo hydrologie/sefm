@@ -2,7 +2,7 @@
 
   <h1><img src="assets/hvplot-wm.png" width="125"></h1>
 
-.. notebook:: hvplot ../examples/homepage.ipynb
+.. notebook:: ../misc/homepage.ipynb
    :offset: 0
 
 .. toctree::
@@ -11,6 +11,6 @@
 
    Introduction <self>
    Getting Started <getting_started/index>
-   Notebooks <user_guide/index>
+   Notebooks <notebooks/index>
    Github Source <https://github.com/hydrologie/sefm>
    About <about>
