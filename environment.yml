@@ -1,6 +1,7 @@
 name: env
 channels:
  - conda-forge
+ - pyviz
 dependencies:
  - python=3.7*
  - pip=20
@@ -10,10 +11,12 @@ dependencies:
  - descartes
  - docker
  - docker-compose
+ - firefox
  - flask
  - flask-sqlalchemy
  - fsspec
  - gcsfs
+ - geckodriver
  - geopandas
  - geoviews-core
  - h5netcdf
@@ -30,6 +33,7 @@ dependencies:
  - jupyter_nbextensions_configurator
  - lz4
  - matplotlib-base
+ - nbsite
  - nomkl
  - numpy
  - numcodecs
@@ -49,6 +53,7 @@ dependencies:
  - scikit-learn
  - scipy
  - seaborn
+ - selenium
  - rpy2
  - xarray
  - zarr

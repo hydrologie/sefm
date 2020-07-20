@@ -11,9 +11,6 @@
 
    Introduction <self>
    Getting Started <getting_started/index>
-   User Guide <user_guide/index>
-   Reference Gallery <reference/index>
-   Topics <topics>
-   Developer Guide <developer_guide/index>
-   Github Source <https://github.com/holoviz/hvplot>
+   Notebooks <user_guide/index>
+   Github Source <https://github.com/hydrologie/sefm>
    About <about>
