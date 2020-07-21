@@ -7,7 +7,7 @@
 homepage
 ********
 
-.. notebook::  ../doc/homepage.ipynb
+.. notebook::  hvplot ../doc/homepage.ipynb
     :offset: 0
 
 
