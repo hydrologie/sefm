@@ -56,3 +56,5 @@ dependencies:
  - rpy2
  - xarray
  - zarr
+ - pip:
+    - git+https://github.com/hydrologie/sefm.git
