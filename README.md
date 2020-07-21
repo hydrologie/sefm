@@ -1,5 +1,4 @@
-![Build and Deploy](https://github.com/hydrologie/sefm/workflows/Build%20and%20Deploy/badge.svg)
-
+![Docs](https://github.com/hydrologie/sefm/workflows/Docs/badge.svg)
 # Stochastic Event Flood Model (SEFM)
 
 sefm est une approche stochastique de génération des apports et du laminage basé 
