@@ -1,5 +1,4 @@
 import os
-import versioneer
 from setuptools import find_packages, setup
 
 here = os.path.dirname(__file__)
