@@ -1,4 +1,4 @@
-![Build and Deploy](https://github.com/hydrologie/sefm/workflows/Build%20and%20Deploy/badge.svg)
+![Docs](https://github.com/hydrologie/sefm/workflows/Build%20and%20Deploy/badge.svg)
 
 # Stochastic Event Flood Model (SEFM)
 
