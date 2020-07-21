@@ -7,7 +7,7 @@
 homepage
 ********
 
-.. notebook::  ../misc/homepage.ipynb
+.. notebook::  ../doc/homepage.ipynb
     :offset: 0
 
 
