@@ -4,6 +4,119 @@ import plotly.express as px
 import geopandas as gpd
 import json
 
+import os
+import pandas as pd
+import numpy as np
+
+
+class Stations:
+    def __init__(self, metadata_bucket, storage_options=None):
+        """
+
+        Parameters
+        ----------
+        metadata_bucket
+        storage_options
+        """
+
+        # TODO : Handle Exceptions
+
+        self.metadata_bucket = metadata_bucket
+        self.storage_options = storage_options
+        self.metadata = None
+
+    def read_metadata(self,
+                      station_names=None,
+                      latlngbox=None):
+        """
+
+        Parameters
+        ----------
+        station_names
+        latlngbox
+
+        Returns
+        -------
+
+        """
+
+        ddf = dd.read_csv(urlpath=self.metadata_bucket,
+                          storage_options=self.storage_options)
+
+        if station_names is not None:
+            # convert to array if single string was passed
+            station_names = [station_names] if isinstance(station_names, str) else station_names
+
+            ddf = ddf[ddf.id.isin(station_names)].compute()
+
+        elif latlngbox is not None and station_names is None:
+            ddf = ddf[ddf['longitude'].between(latlngbox[0], latlngbox[1]) &
+                      ddf['latitude'].between(latlngbox[2], latlngbox[3])].compute()
+        else:
+            ddf = ddf.compute()
+
+        self.metadata = ddf
+
+        return ddf
+
+    def read_csv(self,
+                 bucket,
+                 element=None,
+                 storage_options=None):
+        """
+
+        Parameters
+        ----------
+        bucket
+        element
+        storage_options
+
+        Returns
+        -------
+
+        """
+
+        if storage_options is None:
+            storage_options = self.storage_options
+
+        element = [element] if isinstance(element, str) else element
+
+        df = dd.read_csv(bucket, storage_options=storage_options)
+        return df.loc[df.loc(self.metadata.id) & df.element.isin(element)].compute()
+
+    def read_parquet(self,
+                     bucket,
+                     element=None,
+                     storage_options=None):
+        """
+
+        Parameters
+        ----------
+        bucket
+        element
+        storage_options
+
+        Returns
+        -------
+
+        """
+
+        if storage_options is None:
+            storage_options = self.storage_options
+
+        element = [element] if isinstance(element, str) else element
+
+        ddf = dd.read_parquet(bucket,
+                              engine='pyarrow',
+                              storage_options=storage_options)
+
+        ddf = ddf.loc[ddf.index.isin(self.metadata.id)]
+
+        if element is not None:
+            ddf = ddf.loc[ddf.element.isin(element)]
+
+        return ddf.compute().reset_index()
+
 
 def get_metadata_stations(bucket,
                           latlngbox,
