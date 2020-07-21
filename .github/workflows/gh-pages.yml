@@ -18,7 +18,7 @@ jobs:
         run: |
           conda info
           conda list
-          nbsite generate-rst --examples=./notebooks/ipynb --doc=./doc/notebooks --skip '^.*homepage.*$'
+          nbsite generate-rst --examples=notebooks/ipynb --doc=doc/notebooks
           nbsite build --what=html --output=builtdocs
           
       - name: Deploy 🚀
