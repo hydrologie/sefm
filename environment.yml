@@ -1,4 +1,4 @@
-name: env
+name: sefm
 channels:
  - conda-forge
  - pyviz
