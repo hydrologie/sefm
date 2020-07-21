@@ -22,4 +22,4 @@ Le storm typing est une approche de classification supervisée basé sur des var
   - Financière Agricole
   - National Weather Service
 
-![alt text](../../../misc/img/AMS.png?raw=true)
+![alt text](https://s3.us-east-2.wasabisys.com/analytics-store/img/AMS.png?raw=true)
