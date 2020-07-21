@@ -1,5 +1,4 @@
 ![Build and Deploy](https://github.com/hydrologie/sefm/workflows/Build%20and%20Deploy/badge.svg)
-[![Known Vulnerabilities](https://snyk.io/test/github/dwyl/hapi-auth-jwt2/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dwyl/hapi-auth-jwt2?targetFile=package.json)
 
 # Stochastic Event Flood Model (SEFM)
 
