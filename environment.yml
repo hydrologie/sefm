@@ -52,6 +52,7 @@ dependencies:
  - scipy
  - seaborn
  - selenium
+ - sphinx_holoviz_theme
  - rpy2
  - xarray
  - zarr
