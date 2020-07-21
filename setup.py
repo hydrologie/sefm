@@ -53,8 +53,6 @@ setup(
     install_requires=install_requires,
     extras_require=extras_require,
     python_requires=">=3.6",
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
     long_description=long_description,
     long_description_content_type="text/markdown",
 )
