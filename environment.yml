@@ -9,8 +9,6 @@ dependencies:
  - dask-ml
  - datashader
  - descartes
- - docker
- - docker-compose
  - firefox
  - flask
  - flask-sqlalchemy
