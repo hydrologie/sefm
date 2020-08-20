@@ -3,5 +3,7 @@
 }
 
 .dataframe {
-    overflow-y: scroll; max-height: 400px;
+    overflow-y: scroll;
+    display: block;
+    max-height: 400px;
 }

@@ -21,10 +21,6 @@ div.section::after {
     clear: left;
 }
 
-.dataframe {
-    overflow-y: scroll; max-height: 400px;
-}
-
 /* -- relbar ---------------------------------------------------------------- */
 
 div.related {
