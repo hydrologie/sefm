@@ -212,29 +212,29 @@ During handling of the above exception, another exception occurred:
 <span class="ansi-green-intense-fg ansi-bold">    393</span> 
 
 <span class="ansi-green-fg">/usr/share/miniconda/envs/sefm/lib/python3.7/http/client.py</span> in <span class="ansi-cyan-fg">request</span><span class="ansi-blue-fg">(self, method, url, body, headers, encode_chunked)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1251</span>         <span class="ansi-blue-fg">"""Send a complete request to the server."""</span>
-<span class="ansi-green-fg">-&gt; 1252</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_send_request<span class="ansi-blue-fg">(</span>method<span class="ansi-blue-fg">,</span> url<span class="ansi-blue-fg">,</span> body<span class="ansi-blue-fg">,</span> headers<span class="ansi-blue-fg">,</span> encode_chunked<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1253</span> 
+<span class="ansi-green-intense-fg ansi-bold">   1261</span>         <span class="ansi-blue-fg">"""Send a complete request to the server."""</span>
+<span class="ansi-green-fg">-&gt; 1262</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_send_request<span class="ansi-blue-fg">(</span>method<span class="ansi-blue-fg">,</span> url<span class="ansi-blue-fg">,</span> body<span class="ansi-blue-fg">,</span> headers<span class="ansi-blue-fg">,</span> encode_chunked<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1263</span> 
 
 <span class="ansi-green-fg">/usr/share/miniconda/envs/sefm/lib/python3.7/http/client.py</span> in <span class="ansi-cyan-fg">_send_request</span><span class="ansi-blue-fg">(self, method, url, body, headers, encode_chunked)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1297</span>             body <span class="ansi-blue-fg">=</span> _encode<span class="ansi-blue-fg">(</span>body<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">'body'</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">-&gt; 1298</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>endheaders<span class="ansi-blue-fg">(</span>body<span class="ansi-blue-fg">,</span> encode_chunked<span class="ansi-blue-fg">=</span>encode_chunked<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1299</span> 
+<span class="ansi-green-intense-fg ansi-bold">   1307</span>             body <span class="ansi-blue-fg">=</span> _encode<span class="ansi-blue-fg">(</span>body<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">'body'</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">-&gt; 1308</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>endheaders<span class="ansi-blue-fg">(</span>body<span class="ansi-blue-fg">,</span> encode_chunked<span class="ansi-blue-fg">=</span>encode_chunked<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1309</span> 
 
 <span class="ansi-green-fg">/usr/share/miniconda/envs/sefm/lib/python3.7/http/client.py</span> in <span class="ansi-cyan-fg">endheaders</span><span class="ansi-blue-fg">(self, message_body, encode_chunked)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1246</span>             <span class="ansi-green-fg">raise</span> CannotSendHeader<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">-&gt; 1247</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_send_output<span class="ansi-blue-fg">(</span>message_body<span class="ansi-blue-fg">,</span> encode_chunked<span class="ansi-blue-fg">=</span>encode_chunked<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1248</span> 
+<span class="ansi-green-intense-fg ansi-bold">   1256</span>             <span class="ansi-green-fg">raise</span> CannotSendHeader<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">-&gt; 1257</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_send_output<span class="ansi-blue-fg">(</span>message_body<span class="ansi-blue-fg">,</span> encode_chunked<span class="ansi-blue-fg">=</span>encode_chunked<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1258</span> 
 
 <span class="ansi-green-fg">/usr/share/miniconda/envs/sefm/lib/python3.7/http/client.py</span> in <span class="ansi-cyan-fg">_send_output</span><span class="ansi-blue-fg">(self, message_body, encode_chunked)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1025</span>         <span class="ansi-green-fg">del</span> self<span class="ansi-blue-fg">.</span>_buffer<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-fg">-&gt; 1026</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>send<span class="ansi-blue-fg">(</span>msg<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1027</span> 
+<span class="ansi-green-intense-fg ansi-bold">   1027</span>         <span class="ansi-green-fg">del</span> self<span class="ansi-blue-fg">.</span>_buffer<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-fg">-&gt; 1028</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>send<span class="ansi-blue-fg">(</span>msg<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1029</span> 
 
 <span class="ansi-green-fg">/usr/share/miniconda/envs/sefm/lib/python3.7/http/client.py</span> in <span class="ansi-cyan-fg">send</span><span class="ansi-blue-fg">(self, data)</span>
-<span class="ansi-green-intense-fg ansi-bold">    965</span>             <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>auto_open<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 966</span><span class="ansi-red-fg">                 </span>self<span class="ansi-blue-fg">.</span>connect<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    967</span>             <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    967</span>             <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>auto_open<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 968</span><span class="ansi-red-fg">                 </span>self<span class="ansi-blue-fg">.</span>connect<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    969</span>             <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
 
 <span class="ansi-green-fg">/usr/share/miniconda/envs/sefm/lib/python3.7/site-packages/urllib3/connection.py</span> in <span class="ansi-cyan-fg">connect</span><span class="ansi-blue-fg">(self)</span>
 <span class="ansi-green-intense-fg ansi-bold">    186</span>     <span class="ansi-green-fg">def</span> connect<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
@@ -246,7 +246,7 @@ During handling of the above exception, another exception occurred:
 <span class="ansi-green-fg">--&gt; 172</span><span class="ansi-red-fg">                 </span>self<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">"Failed to establish a new connection: %s"</span> <span class="ansi-blue-fg">%</span> e
 <span class="ansi-green-intense-fg ansi-bold">    173</span>             )
 
-<span class="ansi-red-fg">NewConnectionError</span>: &lt;urllib3.connection.HTTPConnection object at 0x7f4e7535f0d0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known
+<span class="ansi-red-fg">NewConnectionError</span>: &lt;urllib3.connection.HTTPConnection object at 0x7f1255f73dd0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known
 
 During handling of the above exception, another exception occurred:
 
@@ -257,16 +257,16 @@ During handling of the above exception, another exception occurred:
 <span class="ansi-green-intense-fg ansi-bold">    450</span>                 )
 
 <span class="ansi-green-fg">/usr/share/miniconda/envs/sefm/lib/python3.7/site-packages/urllib3/connectionpool.py</span> in <span class="ansi-cyan-fg">urlopen</span><span class="ansi-blue-fg">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)</span>
-<span class="ansi-green-intense-fg ansi-bold">    724</span>             retries = retries.increment(
-<span class="ansi-green-fg">--&gt; 725</span><span class="ansi-red-fg">                 </span>method<span class="ansi-blue-fg">,</span> url<span class="ansi-blue-fg">,</span> error<span class="ansi-blue-fg">=</span>e<span class="ansi-blue-fg">,</span> _pool<span class="ansi-blue-fg">=</span>self<span class="ansi-blue-fg">,</span> _stacktrace<span class="ansi-blue-fg">=</span>sys<span class="ansi-blue-fg">.</span>exc_info<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">    726</span>             )
+<span class="ansi-green-intense-fg ansi-bold">    726</span>             retries = retries.increment(
+<span class="ansi-green-fg">--&gt; 727</span><span class="ansi-red-fg">                 </span>method<span class="ansi-blue-fg">,</span> url<span class="ansi-blue-fg">,</span> error<span class="ansi-blue-fg">=</span>e<span class="ansi-blue-fg">,</span> _pool<span class="ansi-blue-fg">=</span>self<span class="ansi-blue-fg">,</span> _stacktrace<span class="ansi-blue-fg">=</span>sys<span class="ansi-blue-fg">.</span>exc_info<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">    728</span>             )
 
 <span class="ansi-green-fg">/usr/share/miniconda/envs/sefm/lib/python3.7/site-packages/urllib3/util/retry.py</span> in <span class="ansi-cyan-fg">increment</span><span class="ansi-blue-fg">(self, method, url, response, error, _pool, _stacktrace)</span>
 <span class="ansi-green-intense-fg ansi-bold">    438</span>         <span class="ansi-green-fg">if</span> new_retry<span class="ansi-blue-fg">.</span>is_exhausted<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 <span class="ansi-green-fg">--&gt; 439</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">raise</span> MaxRetryError<span class="ansi-blue-fg">(</span>_pool<span class="ansi-blue-fg">,</span> url<span class="ansi-blue-fg">,</span> error <span class="ansi-green-fg">or</span> ResponseError<span class="ansi-blue-fg">(</span>cause<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    440</span> 
 
-<span class="ansi-red-fg">MaxRetryError</span>: HTTPConnectionPool(host='vwse3dpda01.hqp.hydro.qc.ca', port=80): Max retries exceeded with url: //WebService/WebService1.asmx/getMetaPoints (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f4e7535f0d0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known'))
+<span class="ansi-red-fg">MaxRetryError</span>: HTTPConnectionPool(host='vwse3dpda01.hqp.hydro.qc.ca', port=80): Max retries exceeded with url: //WebService/WebService1.asmx/getMetaPoints (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f1255f73dd0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known'))
 
 During handling of the above exception, another exception occurred:
 
@@ -311,7 +311,7 @@ During handling of the above exception, another exception occurred:
 <span class="ansi-green-intense-fg ansi-bold">    517</span> 
 <span class="ansi-green-intense-fg ansi-bold">    518</span>         <span class="ansi-green-fg">except</span> ClosedPoolError <span class="ansi-green-fg">as</span> e<span class="ansi-blue-fg">:</span>
 
-<span class="ansi-red-fg">ConnectionError</span>: HTTPConnectionPool(host='vwse3dpda01.hqp.hydro.qc.ca', port=80): Max retries exceeded with url: //WebService/WebService1.asmx/getMetaPoints (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f4e7535f0d0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known'))</pre>
+<span class="ansi-red-fg">ConnectionError</span>: HTTPConnectionPool(host='vwse3dpda01.hqp.hydro.qc.ca', port=80): Max retries exceeded with url: //WebService/WebService1.asmx/getMetaPoints (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f1255f73dd0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known'))</pre>
 </div>
 </div>
 </div>

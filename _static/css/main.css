@@ -1997,9 +1997,7 @@ dt a.headerlink {
 .toctree-wrapper {
     display: none
 }
-.dataframe {
-    overflow-y: scroll; max-height: 400px;
-}
+
 .class,
 .section {
     clear: both
@@ -2221,8 +2219,4 @@ dt:target,
 
 .expander .expander-hidden+.expander-content {
     display: none
-}
-
-.dataframe {
-    overflow-y: scroll; max-height: 400px;
 }
