@@ -2220,7 +2220,7 @@ dt:target,
 .expander .expander-hidden+.expander-content {
     display: none
 }
-\n
+ 
 .dataframe {
 overflow-y: scroll; max-height: 400px;
 }
