@@ -1,0 +1,7 @@
+.sphx-glr-thumbcontainer {
+    height: 210px;
+}
+
+.dataframe {
+    overflow-y: scroll; max-height: 400px;
+}
