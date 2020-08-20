@@ -18,6 +18,10 @@ jobs:
         run: |
           conda info
           conda list
+          echo "\n" >> /usr/share/miniconda/envs/sefm//lib/python3.7/site-packages/sphinx_holoviz_theme/static/css/main.css_t
+          echo ".dataframe {" >> /usr/share/miniconda/envs/sefm//lib/python3.7/site-packages/sphinx_holoviz_theme/static/css/main.css_t
+          echo "overflow-y: scroll; max-height: 400px;" >> /usr/share/miniconda/envs/sefm//lib/python3.7/site-packages/sphinx_holoviz_theme/static/css/main.css_t
+          echo "}" >> /usr/share/miniconda/envs/sefm//lib/python3.7/site-packages/sphinx_holoviz_theme/static/css/main.css_t
           nbsite generate-rst --examples=notebooks/ipynb --project-name=hvplot --doc=doc/notebooks --skip '^.*homepage.*$'
           nbsite build --what=html --output=builtdocs
           
