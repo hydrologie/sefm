@@ -132,7 +132,7 @@ class Stations:
         opts.defaults(
                 opts.Overlay(active_tools=['wheel_zoom', 'pan']))
 
-        (gf.ocean*gf.land*gf.ocean* gf.borders) *\
+        return (gf.ocean*gf.land*gf.ocean* gf.borders) *\
             self.metadata.hvplot.points('longitude', 'latitude',
                                         hover_cols=['id','name'],
                                         grid=True, width=1500, height=800,
