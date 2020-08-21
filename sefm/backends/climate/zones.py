@@ -62,20 +62,16 @@ class Zones:
         maps = []
 
         for key, value in self.data.items():
-            print(key)
 
             if key != 'background':
                 line_plot = None
                 for unique_type in value['gdf'].geometry.type.unique():
-                    print(unique_type)
                     gdf = value['gdf'].loc[value['gdf'].geometry.type.isin([unique_type])]
-                    print(gdf.columns)
                     if unique_type == 'MultiPolygon' or unique_type == 'Polygon':
                         zone_plot = gdf.hvplot(hover_cols=['id'], colorbar=False,
                                                legend=False, label='id',
                                                grid=True, width=600, height=450,
                                                project=True, alpha=0.6, tiles='EsriUSATopo')
-                        print(zone_plot.values()[0])
                         data = list(zip(zone_plot.Polygons.values()[0].data.geometry.centroid.x,
                                         zone_plot.Polygons.values()[0].data.geometry.centroid.y))
 
@@ -88,9 +84,9 @@ class Zones:
                         line_plot = gdf.hvplot(project=True)
                 if line_plot is not None:
 
-                    interactive_map = (gf.ocean * gf.land * gf.ocean * gf.borders) * \
-                                      zone_plot * \
-                                      labels * \
+                    interactive_map = (gf.ocean * gf.land * gf.ocean * gf.borders) *\
+                                      zone_plot *\
+                                      labels *\
                                       self.data['background']['gdf'].hvplot(project=True, alpha=0.1) * \
                                       line_plot
                 else:
