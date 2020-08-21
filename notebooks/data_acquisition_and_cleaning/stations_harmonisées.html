@@ -5,9 +5,9 @@
 <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <meta charset="utf-8"/>
-<title>stations harmonisées — hvPlot 0.6.0 documentation</title>
+<title>stations harmonisées — SEFM 0.6.0 documentation</title>
 <meta content="A high-level plotting API for the PyData ecosystem built on HoloViews" name="description"/>
-<meta content="HoloViz developers" name="author"/>
+<meta content="SEFM developers" name="author"/>
 <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -50,8 +50,7 @@
 <a class="navigation-menu-button" href="javascript:void(0)" id="js-mobile-menu">Menu</a>
 <nav>
 <ul class="navigation-menu show" id="js-navigation-menu">
-<li class="nav-link doc-head"><a href="//gitter.im/pyviz/pyviz">Gitter</a></li>
-<li class="nav-link doc-head"><a href="//github.com/holoviz/hvplot">Github</a></li>
+<li class="nav-link doc-head"><a href="//github.com/hydrologie/sefm">Github</a></li>
 </ul>
 </nav>
 </div>
@@ -246,7 +245,7 @@ During handling of the above exception, another exception occurred:
 <span class="ansi-green-fg">--&gt; 172</span><span class="ansi-red-fg">                 </span>self<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">"Failed to establish a new connection: %s"</span> <span class="ansi-blue-fg">%</span> e
 <span class="ansi-green-intense-fg ansi-bold">    173</span>             )
 
-<span class="ansi-red-fg">NewConnectionError</span>: &lt;urllib3.connection.HTTPConnection object at 0x7fe233746ad0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known
+<span class="ansi-red-fg">NewConnectionError</span>: &lt;urllib3.connection.HTTPConnection object at 0x7f70cabf9450&gt;: Failed to establish a new connection: [Errno -2] Name or service not known
 
 During handling of the above exception, another exception occurred:
 
@@ -266,7 +265,7 @@ During handling of the above exception, another exception occurred:
 <span class="ansi-green-fg">--&gt; 439</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">raise</span> MaxRetryError<span class="ansi-blue-fg">(</span>_pool<span class="ansi-blue-fg">,</span> url<span class="ansi-blue-fg">,</span> error <span class="ansi-green-fg">or</span> ResponseError<span class="ansi-blue-fg">(</span>cause<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    440</span> 
 
-<span class="ansi-red-fg">MaxRetryError</span>: HTTPConnectionPool(host='vwse3dpda01.hqp.hydro.qc.ca', port=80): Max retries exceeded with url: //WebService/WebService1.asmx/getMetaPoints (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7fe233746ad0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known'))
+<span class="ansi-red-fg">MaxRetryError</span>: HTTPConnectionPool(host='vwse3dpda01.hqp.hydro.qc.ca', port=80): Max retries exceeded with url: //WebService/WebService1.asmx/getMetaPoints (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f70cabf9450&gt;: Failed to establish a new connection: [Errno -2] Name or service not known'))
 
 During handling of the above exception, another exception occurred:
 
@@ -311,7 +310,7 @@ During handling of the above exception, another exception occurred:
 <span class="ansi-green-intense-fg ansi-bold">    517</span> 
 <span class="ansi-green-intense-fg ansi-bold">    518</span>         <span class="ansi-green-fg">except</span> ClosedPoolError <span class="ansi-green-fg">as</span> e<span class="ansi-blue-fg">:</span>
 
-<span class="ansi-red-fg">ConnectionError</span>: HTTPConnectionPool(host='vwse3dpda01.hqp.hydro.qc.ca', port=80): Max retries exceeded with url: //WebService/WebService1.asmx/getMetaPoints (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7fe233746ad0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known'))</pre>
+<span class="ansi-red-fg">ConnectionError</span>: HTTPConnectionPool(host='vwse3dpda01.hqp.hydro.qc.ca', port=80): Max retries exceeded with url: //WebService/WebService1.asmx/getMetaPoints (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f70cabf9450&gt;: Failed to establish a new connection: [Errno -2] Name or service not known'))</pre>
 </div>
 </div>
 </div>
@@ -14061,11 +14060,10 @@ dtype: object</pre>
 </ul>
 <ul>
 <li><span class="footer-title">Join Us</span></li>
-<li><a href="//gitter.im/pyviz/pyviz">Gitter</a></li>
-<li><a href="//github.com/holoviz/hvplot">Github</a></li>
+<li><a href="//github.com/hydrologie/sefm">Github</a></li>
 </ul>
 <ul class="copyright">
-<li>2018-2020 HoloViz developers</li>
+<li>2020-2021 SEFM developers</li>
 </ul>
 </div>
 </footer>
