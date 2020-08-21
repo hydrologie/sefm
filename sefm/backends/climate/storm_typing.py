@@ -3,10 +3,13 @@ import plotly.graph_objects as go
 import plotly.express as px
 import geopandas as gpd
 import json
-
+import hvplot
+import holoviews as hv
+from geoviews import opts
 import os
 import pandas as pd
 import numpy as np
+import geoviews.feature as gf
 
 
 class Stations:
@@ -117,6 +120,24 @@ class Stations:
 
         return ddf.compute().reset_index()
 
+    def plot_stations(self):
+        """
+
+        Returns
+        -------
+
+        """
+        hv.extension('bokeh')
+
+        opts.defaults(
+                opts.Overlay(active_tools=['wheel_zoom', 'pan']))
+
+        (gf.ocean*gf.land*gf.ocean* gf.borders) *\
+            self.metadata.hvplot.points('longitude', 'latitude',
+                                        hover_cols=['id','name'],
+                                        grid=True, width=1500, height=800,
+                                        project=True,  alpha=0.8,
+                                        xlim=(-81, -74), ylim=(44, 49.2), tiles='EsriUSATopo')
 
 
 # def get_metadata_stations(bucket,
