@@ -95,27 +95,34 @@
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">Javascript</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
 
 <span class="n">HTML</span><span class="p">(</span><span class="s1">'''&lt;script&gt;</span>
+
 <span class="s1">code_show=true; </span>
+
 <span class="s1">function code_toggle() {</span>
 <span class="s1">if (code_show){</span>
 <span class="s1">$('div.input').hide();</span>
-<span class="s1">value='Display code'</span>
+<span class="s1">    if (document.getElementById('input') !== null)</span>
+<span class="s1">        {document.getElementById('input').value = 'Display code in notebook';}</span>
 <span class="s1">} else {</span>
 <span class="s1">$('div.input').not(':first').show();</span>
+<span class="s1">document.getElementById('input').value = 'Hide code in notebook';</span>
 <span class="s1">}</span>
 <span class="s1">code_show = !code_show</span>
-<span class="s1">} </span>
-<span class="s1">$( document ).ready(code_toggle);</span>
+<span class="s1">}</span>
 
-<span class="s1">$('div.cell.code_cell.rendered.selected').find('div.input').hide()</span>
+<span class="s1">$( document ).ready(code_toggle);</span>
+<span class="s1">$('div.cell.code_cell.rendered.selected').find('div.input').hide();</span>
+
+
 
 <span class="s1">&lt;/script&gt;</span>
 
-
-<span class="s1">&lt;form id="form1" action="javascript:code_toggle()"&gt;&lt;input type="submit" value="Display/Hide code in notebook"&gt;&lt;/form&gt;</span>
+<span class="s1">&lt;form id="form" action="javascript:code_toggle()"&gt;</span>
+<span class="s1">    &lt;input id="input" type="submit" value="Display code in notebook"&gt;</span>
+<span class="s1">&lt;/form&gt;</span>
 
 
 
@@ -131,58 +138,32 @@
 <div class="prompt output_prompt">Out[1]:</div>
 <div class="output_html rendered_html output_subarea output_execute_result">
 <script>
+
 code_show=true; 
+
 function code_toggle() {
 if (code_show){
 $('div.input').hide();
-value='Display code'
+    if (document.getElementById('input') !== null)
+        {document.getElementById('input').value = 'Display code in notebook';}
 } else {
 $('div.input').not(':first').show();
+document.getElementById('input').value = 'Hide code in notebook';
 }
 code_show = !code_show
-} 
-$( document ).ready(code_toggle);
+}
 
-$('div.cell.code_cell.rendered.selected').find('div.input').hide()
+$( document ).ready(code_toggle);
+$('div.cell.code_cell.rendered.selected').find('div.input').hide();
+
+
 
 </script>
-<form action="javascript:code_toggle()" id="form1"><input type="submit" value="Display/Hide code in notebook"/></form>
+<form action="javascript:code_toggle()" id="form">
+<input id="input" type="submit" value="Display code in notebook"/>
+</form>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="1.-Introduction">1. Introduction<a class="anchor-link" href="#1.-Introduction">¶</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.1-Usage">1.1 Usage<a class="anchor-link" href="#1.1-Usage">¶</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Storm typing classifies storms events into classes that are nearly homogeneous with respects to their generating phenomenon. This allows to evaluate more homogeunous distributions for each storm type when computing precipitation-frequency analysis rather than a traditionel mixed distribution with all the storms. Homogeneity is an assumption when computing frequency analysis which makes storm typing all the more important.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img alt="alt text" src="https://s3.us-east-2.wasabisys.com/analytics-store/img/AMS.png?raw=true"/></p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 </div>
 </div>
 </div>
@@ -224,10 +205,10 @@ $('div.cell.code_cell.rendered.selected').find('div.input').hide()
 <div class="output">
 <div class="output_area">
 <div class="prompt"></div>
-<div id="49e8d265-61de-4ae1-b326-ef7feadcafca"></div>
+<div id="7ccdef9f-dc2a-4a9d-8701-ef3597cd2cef"></div>
 <div class="output_subarea output_javascript">
 <script type="text/javascript">
-var element = $('#49e8d265-61de-4ae1-b326-ef7feadcafca');
+var element = $('#7ccdef9f-dc2a-4a9d-8701-ef3597cd2cef');
 
 (function(root) {
   function now() {
@@ -1404,10 +1385,10 @@ var element = $('#49e8d265-61de-4ae1-b326-ef7feadcafca');
 </div>
 <div class="output_area">
 <div class="prompt"></div>
-<div id="827fa658-6c73-42f4-a050-d88d65c5eb95"></div>
+<div id="37c33ec7-8e3c-4379-aa23-ac3260ae585a"></div>
 <div class="output_subarea output_javascript">
 <script type="text/javascript">
-var element = $('#827fa658-6c73-42f4-a050-d88d65c5eb95');
+var element = $('#37c33ec7-8e3c-4379-aa23-ac3260ae585a');
 
 if ((window.PyViz === undefined) || (window.PyViz instanceof HTMLElement)) {
   window.PyViz = {comms: {}, comm_status:{}, kernels:{}, receivers: {}, plot_index: []}
@@ -1662,6 +1643,104 @@ if (window.Jupyter !== undefined) {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="1.-Introduction">1. Introduction<a class="anchor-link" href="#1.-Introduction">¶</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1-Usage">1.1 Usage<a class="anchor-link" href="#1.1-Usage">¶</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Storm typing classifies storms events into classes that are nearly homogeneous with respects to their generating phenomenon. This allows to evaluate more homogeunous distributions for each storm type when computing precipitation-frequency analysis rather than a traditionel mixed distribution with all the storms. Homogeneity is an assumption when computing frequency analysis which makes storm typing all the more important.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.2-Storm-types">1.2 Storm types<a class="anchor-link" href="#1.2-Storm-types">¶</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Description ...</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.3-Database-of-Daily-Storm-Types-(DDST)">1.3 Database of Daily Storm Types (DDST)<a class="anchor-link" href="#1.3-Database-of-Daily-Storm-Types-(DDST)">¶</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Description ...</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2.-Calculations">2. Calculations<a class="anchor-link" href="#2.-Calculations">¶</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Introduction...</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img alt="alt text" src="https://s3.us-east-2.wasabisys.com/analytics-store/img/AMS.png?raw=true"/></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Intrants">Intrants<a class="anchor-link" href="#Intrants">¶</a></h2>
 </div>
 </div>
@@ -1678,9 +1757,9 @@ if (window.Jupyter !== undefined) {
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">latlngbox</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">82</span><span class="p">,</span> <span class="o">-</span><span class="mi">74</span><span class="p">,</span> <span class="mf">44.5</span><span class="p">,</span> <span class="mi">49</span><span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Markdown</span> <span class="k">as</span> <span class="n">md</span>
 
-<span class="n">hide_toggle</span><span class="p">()</span>
+<span class="n">md</span><span class="p">(</span><span class="s2">"Définition d'une région spatiale afin de limiter l'extraction des données météos = </span><span class="si">%s</span><span class="s2">"</span><span class="o">%</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">latlngbox</span><span class="p">)))</span>
 </pre></div>
 </div>
 </div>
@@ -1693,13 +1772,35 @@ if (window.Jupyter !== undefined) {
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-3-695c3df44871&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> latlngbox <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">82</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">74</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">44.5</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">49</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-fg">&lt;ipython-input-3-c00e4004091f&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-green-fg">from</span> IPython<span class="ansi-blue-fg">.</span>display <span class="ansi-green-fg">import</span> Markdown <span class="ansi-green-fg">as</span> md
 <span class="ansi-green-intense-fg ansi-bold">      2</span> 
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>hide_toggle<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>md<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Définition d'une région spatiale afin de limiter l'extraction des données météos = %s"</span><span class="ansi-blue-fg">%</span><span class="ansi-blue-fg">(</span>str<span class="ansi-blue-fg">(</span>latlngbox<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-red-fg">NameError</span>: name 'hide_toggle' is not defined</pre>
+<span class="ansi-red-fg">NameError</span>: name 'latlngbox' is not defined</pre>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">latlngbox</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">82</span><span class="p">,</span> <span class="o">-</span><span class="mi">74</span><span class="p">,</span> <span class="mf">44.5</span><span class="p">,</span> <span class="mi">49</span><span class="p">]</span>
+</pre></div>
 </div>
 </div>
 </div>
