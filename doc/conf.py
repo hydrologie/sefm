@@ -2,9 +2,9 @@
 
 from nbsite.shared_conf import *
 
-project = u'hvPlot'
-authors = u'HoloViz developers'
-copyright = u'2018-2020 ' + authors
+project = u'SEFM'
+authors = u'SEFM developers'
+copyright = u'2020-2021 ' + authors
 description = 'A high-level plotting API for the PyData ecosystem built on HoloViews'
 
 import hvplot
@@ -62,7 +62,6 @@ html_context.update({
     'NAV': _NAV,
     'LINKS': _NAV,
     'SOCIAL': (
-        ('Gitter', '//gitter.im/pyviz/pyviz'),
-        ('Github', '//github.com/holoviz/hvplot'),
+        ('Github', '//github.com/hydrologie/sefm'),
     )
 })
