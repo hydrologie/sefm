@@ -18,11 +18,15 @@ The following sections represent **Tasks** for which a report (multiple notebook
   Seasonality of storms at bi-weekly resolution for a specific duration and storm type
   Evaluation of heterogeneous climatic regions as a prerequisite to the L-moment approach
 
-* `Data Assembly and Quality Assurance/Quality Control <data_assembly/index.html>`_
-  Data collection, Quality assurance and control, Statistics and Validation
+* `Point and Watershed Precipitation Frequency Analysis`
 
+* `Spatial and Temporal Storm Patterns`
 
+* `Snowpack Data`
 
+* `Stochastic Event Flood Modelling (SEFM) for the Outaouais River (Part I : Simulations)`
+
+* `Stochastic Event Flood Modelling (SEFM) for the Outaouais River (Part II : Routing)`
 
 .. toctree::
     :titlesonly:

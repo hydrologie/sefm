@@ -20,7 +20,7 @@ html_theme_options = {
     'favicon': 'favicon.ico',
     'primary_color': '#266498',
     'primary_color_dark': '#1b486e',
-    'second_nav': True,
+    'second_nav': False,
     'custom_css': 'custom.css',
 }
 
