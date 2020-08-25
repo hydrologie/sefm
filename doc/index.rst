@@ -1,8 +1,8 @@
 .. raw:: html
 
-  <h1><img src="assets/hvplot-wm.png" width="125"></h1>
+  <h1><img src="https://s3.us-west-1.wasabisys.com/sefm/flowcharts/overview.png" width="125"></h1>
 
-.. notebook:: ../misc/homepage.ipynb
+.. notebook:: ../doc/homepage.ipynb
    :offset: 0
 
 .. toctree::
