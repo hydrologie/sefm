@@ -4,8 +4,10 @@ Storm Typing, Seasonality Analysis and Regional Climate Delineation
 
 .. image:: https://s3.us-west-1.wasabisys.com/sefm/flowcharts/task01.png
    :width: 600
+   :align: center
 
 **Overview**:
+
 * `Storm Typing <task-1.1_storm-typing.html>`_
   Application of storm typing algorithms to classify storm events by homogeneous generating events
 * `Seasonality analysis  <task-1.2_seasonality-analysis.html>`_

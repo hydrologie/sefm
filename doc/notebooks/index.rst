@@ -6,6 +6,7 @@ The following sections represent **Tasks** for which a report (multiple notebook
 
 .. image:: https://s3.us-west-1.wasabisys.com/sefm/flowcharts/overview.png
    :width: 600
+   :align: center
 
 **Overview**:
 
@@ -30,3 +31,4 @@ The following sections represent **Tasks** for which a report (multiple notebook
 
     Data Acquisition and Cleaning <data_acquisition_and_cleaning/index>
     Storm Typing, Seasonality Analysis and Regional Climate Delineation <storm_typing/index>
+    Data Assembly and Quality Assurance/Quality Control <data_assembly/index>
