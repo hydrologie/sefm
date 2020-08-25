@@ -1,6 +1,6 @@
-.. raw:: html
-
-  <h1><img src="https://s3.us-west-1.wasabisys.com/sefm/flowcharts/overview.png" width="125"></h1>
+.. image:: https://s3.us-west-1.wasabisys.com/sefm/flowcharts/overview.png
+   :width: 600
+   :align: center
 
 .. notebook:: hvplot ../doc/homepage.ipynb
    :offset: 0
