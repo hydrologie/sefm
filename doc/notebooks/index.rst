@@ -18,7 +18,8 @@ The following sections represent **Tasks** for which a report (multiple notebook
   Seasonality of storms at bi-weekly resolution for a specific duration and storm type
   Evaluation of heterogeneous climatic regions as a prerequisite to the L-moment approach
 
-* `Point and Watershed Precipitation Frequency Analysis`
+* `Point and Watershed Precipitation Frequency Analysis <frequency_analysis/index.html>`_
+   Point and watershed precipitation regional frequency analysis based on L-moments
 
 * `Spatial and Temporal Storm Patterns`
 
@@ -36,3 +37,4 @@ The following sections represent **Tasks** for which a report (multiple notebook
     Data Acquisition and Cleaning <data_acquisition_and_cleaning/index>
     Storm Typing, Seasonality Analysis and Regional Climate Delineation <storm_typing/index>
     Data Assembly and Quality Assurance/Quality Control <data_assembly/index>
+    Point and Watershed Precipitation Frequency Analysis <frequency_analysis/index>
