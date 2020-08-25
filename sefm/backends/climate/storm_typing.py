@@ -135,7 +135,7 @@ class Stations:
         return (gf.ocean*gf.land*gf.ocean* gf.borders) *\
             self.metadata.hvplot.points('longitude', 'latitude',
                                         hover_cols=['id','name'],
-                                        grid=True, width=800, height=500,
+                                        grid=True, width=600, height=400,
                                         project=True,  alpha=0.8,
                                         xlim=(-81, -74), ylim=(44, 49.2), tiles='EsriUSATopo')
 
