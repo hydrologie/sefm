@@ -10,7 +10,7 @@ description = 'A high-level plotting API for the PyData ecosystem built on HoloV
 import hvplot
 version = release = hvplot.__version__
 
-nbbuild_cell_timeout = 600
+nbbuild_cell_timeout = 1200
 
 html_static_path += ['_static']
 html_theme = 'sphinx_holoviz_theme'
