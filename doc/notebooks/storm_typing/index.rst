@@ -2,7 +2,8 @@
 Storm Typing, Seasonality Analysis and Regional Climate Delineation
 **********
 
-<h1><img src="https://s3.us-west-1.wasabisys.com/sefm/flowcharts/task01.png" width="125"></h1>
+.. image:: https://s3.us-west-1.wasabisys.com/sefm/flowcharts/task01.png
+   :width: 600
 
 **Overview**:
 * `Storm Typing <task-1.1_storm-typing.html>`_

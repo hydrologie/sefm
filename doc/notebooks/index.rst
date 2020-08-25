@@ -4,7 +4,8 @@ Notebooks
 
 The following sections represent **Tasks** for which a report (multiple notebooks) is intended to be published
 
-<h1><img src="https://s3.us-west-1.wasabisys.com/sefm/flowcharts/overview.png" width="125"></h1>
+.. image:: https://s3.us-west-1.wasabisys.com/sefm/flowcharts/overview.png
+   :width: 600
 
 **Overview**:
 
