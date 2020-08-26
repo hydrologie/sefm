@@ -5,7 +5,7 @@ Notebooks
 The following sections represent **Tasks** for which a report (multiple notebooks) is intended to be published
 
 .. image:: https://s3.us-west-1.wasabisys.com/sefm/flowcharts/overview.png
-   :width: 600
+   :width: 800
    :align: center
 
 **Overview**:
@@ -16,10 +16,10 @@ The following sections represent **Tasks** for which a report (multiple notebook
 * `Storm Typing, Seasonality Analysis and Regional Climate Delineation <storm_typing/index.html>`_
   Application of storm typing algorithms to classify storm events by homogeneous generating events.
   Seasonality of storms at bi-weekly resolution for a specific duration and storm type
-  Evaluation of heterogeneous climatic regions as a prerequisite to the L-moment approach
+  Evaluation of heterogeneous climatic regions as a prerequisite to the L-moment approach.
 
 * `Point and Watershed Precipitation Frequency Analysis <frequency_analysis/index.html>`_
-   Point and watershed precipitation regional frequency analysis based on L-moments
+  Point and watershed precipitation regional frequency analysis based on L-moments
 
 * `Spatial and Temporal Storm Patterns`
 
