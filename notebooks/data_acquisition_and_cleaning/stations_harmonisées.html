@@ -238,7 +238,7 @@ During handling of the above exception, another exception occurred:
 <span class="ansi-green-fg">--&gt; 172</span><span class="ansi-red-fg">                 </span>self<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">"Failed to establish a new connection: %s"</span> <span class="ansi-blue-fg">%</span> e
 <span class="ansi-green-intense-fg ansi-bold">    173</span>             )
 
-<span class="ansi-red-fg">NewConnectionError</span>: &lt;urllib3.connection.HTTPConnection object at 0x7f4d89431dd0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known
+<span class="ansi-red-fg">NewConnectionError</span>: &lt;urllib3.connection.HTTPConnection object at 0x7fd5eec850d0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known
 
 During handling of the above exception, another exception occurred:
 
@@ -258,7 +258,7 @@ During handling of the above exception, another exception occurred:
 <span class="ansi-green-fg">--&gt; 439</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">raise</span> MaxRetryError<span class="ansi-blue-fg">(</span>_pool<span class="ansi-blue-fg">,</span> url<span class="ansi-blue-fg">,</span> error <span class="ansi-green-fg">or</span> ResponseError<span class="ansi-blue-fg">(</span>cause<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    440</span> 
 
-<span class="ansi-red-fg">MaxRetryError</span>: HTTPConnectionPool(host='vwse3dpda01.hqp.hydro.qc.ca', port=80): Max retries exceeded with url: //WebService/WebService1.asmx/getMetaPoints (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f4d89431dd0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known'))
+<span class="ansi-red-fg">MaxRetryError</span>: HTTPConnectionPool(host='vwse3dpda01.hqp.hydro.qc.ca', port=80): Max retries exceeded with url: //WebService/WebService1.asmx/getMetaPoints (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7fd5eec850d0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known'))
 
 During handling of the above exception, another exception occurred:
 
@@ -303,7 +303,7 @@ During handling of the above exception, another exception occurred:
 <span class="ansi-green-intense-fg ansi-bold">    517</span> 
 <span class="ansi-green-intense-fg ansi-bold">    518</span>         <span class="ansi-green-fg">except</span> ClosedPoolError <span class="ansi-green-fg">as</span> e<span class="ansi-blue-fg">:</span>
 
-<span class="ansi-red-fg">ConnectionError</span>: HTTPConnectionPool(host='vwse3dpda01.hqp.hydro.qc.ca', port=80): Max retries exceeded with url: //WebService/WebService1.asmx/getMetaPoints (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7f4d89431dd0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known'))</pre>
+<span class="ansi-red-fg">ConnectionError</span>: HTTPConnectionPool(host='vwse3dpda01.hqp.hydro.qc.ca', port=80): Max retries exceeded with url: //WebService/WebService1.asmx/getMetaPoints (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x7fd5eec850d0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known'))</pre>
 </div>
 </div>
 </div>
